@@ -1,0 +1,67 @@
+.my-park-container
+{
+    height: auto;
+}
+.my-park-container h3
+{
+    margin-bottom: 25px;
+}
+.my-park-container ul
+{
+    list-style-type: none;
+}
+.my-park-container ul li
+{
+    float:left;
+    position:relative;
+}
+.my-park-container ul li a
+{
+
+}
+.my-park-container ul li a img
+{
+    width:70px;
+    height:70px;
+    margin:20px;
+}
+.my-park-container .bottom-text-id
+{
+    width: 70px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 40%;
+    font-size: 16px;
+}
+
+
+/*Single Car Check Model Style*/
+.car_viewmsg {}
+.car_viewmsg td
+{
+    padding: 5px 25px 5px 25px !important;
+}
+.car_viewmsg td kbd
+{
+    font-size: 16px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px !important;
+    background-color: #69c529;
+}
+
+/*Underline Inside Two Section Tag*/
+.content-underline
+{
+    width: 100%;
+    height: 2px;
+    background-color: #70dd22;
+    margin: 10px 0 3px 0;
+}
+
+/*Red Star for Required Input*/
+.required-must
+{
+    color: red;
+    margin-left: 5px;
+}

@@ -1,0 +1,1011 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+* {
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.well {
+ background-color: white;
+ border: 2px solid #5e8b6a;
+ margin-top: 30px;
+ padding-bottom: 70px;
+     width: 93%;
+}
+
+.agency_form .logo {
+ padding-left: 65px;
+ padding-top: 25px;
+}
+
+.header-content li {
+ text-decoration: none;
+ list-style-type: none;
+ display: inline-block;
+ width: 33%;
+ border-right: 2px solid #5e8b6a;
+}
+
+.header-content li:last-child {
+ border-right: none;
+}
+
+.header-content ul {
+ border: 2px solid #5e8b6a;
+}
+
+.agency_app {
+ border-bottom: 2px solid #5e8b6a;
+ padding-bottom: 20px;
+}
+
+.head-right {
+ text-align: center;
+ width: 52%;
+}
+
+.reg_no {
+ font-size: 20px;
+ color: #538d5a;
+ float: right;
+}
+
+.head-right h6 {
+ font-size: 30px;
+ color: #619a71;
+}
+
+.address p {
+ font-size: 18px;
+ color: #538d5a;
+}
+
+.app_form h5 {
+ background-color: #62946e;
+ color: white;
+ width: 22%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 5px 5px;
+ border-radius: 5px;
+}
+
+.code-text .form-control {
+ width: 71%;
+ margin-left: 80px;
+ margin-top: 10px;
+ border: 1px solid #fff;
+}
+
+label {
+ color: #444;
+}
+
+.text-line {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 75%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.app_name {
+ padding-left: 18px;
+}
+
+.letter {
+ padding-left: 18px;
+ color: #638a6d;
+}
+
+.text-line1 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 68%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line2 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 73%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line3 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 96%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line4 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 50%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.row-fluid {
+ display: flex;
+ width: 24%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+}
+
+.row-fluid input[type="text"] {
+ border-color: #00a65a;
+ padding: 5px 3px;
+}
+
+.pin-number {
+ position: absolute;
+ top: 212px;
+ right: 290px;
+ float: right;
+}
+
+.photo-upload {
+ border: 2px solid #5e976c;
+ width: 52%;
+ height: 220px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.text-detail {
+ padding-top: 20px;
+}
+
+.dob {
+ padding-left: 30px;
+}
+
+.text-line5 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 58%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line6 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 38%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.gender-name {
+ padding-left: 0;
+}
+
+.text-line7 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 86%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line8 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 81%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line9 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 48%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line10 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 60%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line11 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 52%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.text-line12 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 74%;
+ display: inline-block;
+ margin-left: 25px;
+ position: relative;
+}
+
+.agency_app1 {
+ border-bottom: 2px solid #5e8b6a;
+ padding-bottom: 20px;
+}
+
+.agency_app1 li {
+ text-decoration: none;
+ list-style-type: none;
+}
+
+.holder-name {
+ padding-top: 30px;
+ padding-left: 18px;
+}
+
+.text-line13 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 79%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line14 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 78%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line15 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 82%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.text-line16 {
+ background-color: transparent;
+ color: #000;
+ outline: none;
+ outline-style: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: solid #00a65a 1px;
+ padding: 3px 10px;
+ width: 85%;
+ display: inline-block;
+ margin-left: 25px;
+}
+
+.name_app,
+.sign_app {
+ padding-top: 30px;
+}
+
+.Box:focus {
+ border: thin solid #FFD633;
+ -webkit-box-shadow: 0px 0px 3px #F7BB2E;
+ -moz-box-shadow: 0px 0px 3px #F7BB2E;
+ box-shadow: 0px 0px 3px #F7BB2E;
+}
+
+.Box {
+ height: 30px;
+ width: 43px;
+ text-align: justify;
+ letter-spacing: 5px;
+ padding: 10px;
+}
+
+
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  
+  .container {
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .well {
+   background-color: white;
+   border: 10px solid #00a65a;
+   margin-top: 30px;
+  }
+  
+  .container-fluid {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .land_booking_form .logo {
+   padding-top: 25px;
+   padding-left: 20px;
+  }
+  
+  .sub_head p {
+   font-size: 18px;
+   color: #00a65a;
+  }
+  
+  .land_booking_heading h6 {
+   font-size: 30px;
+   color: #00a65a;
+   text-align: center;
+   padding-top: 40px;
+  }
+  
+  .address {
+   color: #00a65a;
+   font-size: 18px;
+   text-align: center;
+  }
+  
+  .photo {
+   border: 1px solid #00a65a;
+   width: 50%;
+   height: 180px;
+   margin-top: 15px;
+   margin-right: 10px;
+  }
+  
+  .land_booking_det1 {
+   width: 45%;
+   padding-top: 10px;
+   color: #00a65a;
+  }
+  
+  .code-text .form-control {
+   width: 55%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .top_app_form1 h1 {
+   font-size: 20px;
+   color: #00a65a;
+  }
+  
+  h3.side_head {
+   background-color: #00a65a;
+   color: white;
+   width: 22%;
+   padding: 6px 6px;
+   border-radius: 0;
+   font-size: 20px;
+   margin-top: 30px;
+   padding-left: 12px;
+  }
+  
+  .text-line {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 86%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .app_name,
+  .occupation,
+  .cash_plot,
+  .cash_plot1,
+  .mode_det,
+  .mode_det1,
+  .sign_app {
+   color: #00a65a;
+  }
+  
+  .app_name:first-child,
+  .plot_detail {
+   padding-top: 30px;
+  }
+  
+  .text-line1 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 73%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line2 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 72%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line3 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 90%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line4 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 99%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .occupation {
+   padding-right: 20px;
+  }
+  
+  .funkyradio input[type="radio"]:empty {
+   display: none;
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label {
+   color: #00a65a;
+  }
+  
+  .funkyradio-default input[type="radio"]:checked ~ label:before {
+   color: #333;
+   background-color: #ccc;
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label:after {
+   content: '\2714';
+   text-indent: .9em;
+   color: #333;
+   padding: 0;
+   margin: 0;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label:before {
+   position: absolute;
+   display: block;
+   top: 5px;
+   bottom: 0;
+   left: 48px;
+   content: '';
+   width: 19%;
+   height: 24px;
+   background: transparent;
+   border-radius: 3px 0 0 3px;
+   border: 1px solid #00a65a;
+   margin-left: 20px;
+  }
+  
+  .funkyradio label {
+   width: 100%;
+   font-weight: normal;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label {
+   position: relative;
+   line-height: 2.5em;
+   margin-top: 12px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   user-select: none;
+   color: #00a65a;
+  }
+  
+  .funkyradio1 input[type="radio"]:empty {
+   display: none;
+  }
+  
+  .funkyradio1 input[type="radio"]:checked ~ label {
+   color: #00a65a;
+  }
+  
+  .funkyradio-primary input[type="radio"]:checked ~ label:before {
+   color: #333;
+   background-color: #ccc;
+  }
+  
+  .funkyradio1 input[type="radio"]:checked ~ label:after {
+   content: '\2714';
+   text-indent: .9em;
+   color: #333;
+   padding: 0;
+   margin: 0;
+  }
+  
+  .funkyradio1 input[type="radio"]:empty ~ label:before {
+   position: absolute;
+   display: block;
+   top: 5px;
+   bottom: 0;
+   left: 96px;
+   content: '';
+   width: 19%;
+   height: 24px;
+   background: transparent;
+   border-radius: 3px 0 0 3px;
+   border: 1px solid #00a65a;
+   margin-left: 20px;
+  }
+  
+  .funkyradio1 label {
+   width: 100%;
+   font-weight: normal;
+  }
+  
+  .funkyradio1 input[type="radio"]:empty ~ label {
+   position: relative;
+   line-height: 2.5em;
+   margin-top: 12px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   user-select: none;
+   width: 35%;
+   color: #00a65a;
+  }
+  
+  .text-line5 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 85%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line6 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 78%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .checkbox label input[type="checkbox"] {
+   display: none;
+  }
+  
+  .checkbox .cr {
+   position: relative;
+   display: inline-block;
+   border: 1px solid #00a65a;
+   border-radius: 0;
+   width: 18%;
+   height: 25px;
+   float: left;
+   margin-right: .5em;
+  }
+  
+  .checkbox .cr .cr-icon {
+   position: absolute;
+   font-size: .8em;
+   line-height: 0;
+   top: 50%;
+   left: 20%;
+  }
+  
+  .checkbox label input[type="checkbox"]:after {
+   content: "\e013";
+   text-indent: .9em;
+   color: #333;
+   padding-left: 12px;
+   margin-left: 20px;
+  }
+  
+  .checkbox label input[type="checkbox"]:before {
+   position: absolute;
+   display: block;
+   top: 5px;
+   bottom: 0;
+   left: 155px;
+   content: '';
+   width: 19%;
+   height: 24px;
+   background: transparent;
+   border-radius: 3px 0 0 3px;
+   border: 1px solid #00a65a;
+   margin-left: 20px;
+  }
+  
+  .cash_plot {
+   width: 32%;
+   padding-top: 15px;
+  }
+  
+  .cash_plot1 {
+   width: 85%;
+   padding-top: 15px;
+  }
+  
+  .row-fluid {
+   display: flex;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+  }
+  
+  .pin-number {
+   padding-left: 15px;
+  }
+  
+  .row-fluid input[type="text"] {
+   border-color: #00a65a;
+   padding: 5px 3px;
+   width: 18%;
+  }
+  
+  .code-text1 .form-control {
+   width: 60%;
+   margin-left: 80px;
+   margin-top: 10px;
+   border: 1px solid #fff;
+  }
+  
+  .code-text1 input[type="text"] {
+   margin-top: 20px;
+  }
+  
+  .mode_scheme li,
+  .plot_detail li {
+   text-decoration: none;
+   list-style-type: none;
+  }
+  
+  .mode_scheme li:first-child {
+   margin-top: 20px;
+  }
+  
+  .mode_det {
+   padding-top: 5px;
+  }
+  
+  .mode_det1 {
+   width: 36%;
+  }
+  
+  .code-text2 .form-control {
+   width: 57%;
+   margin-left: 80px;
+   margin-top: 10px;
+   border: 1px solid #fff;
+  }
+  
+  .top_app_form3 {
+   border-bottom: 2px solid #00a65a;
+  }
+  
+  h3.side_heading {
+   background-color: #00a65a;
+   color: white;
+   width: 42%;
+   padding: 6px 6px;
+   border-radius: 0;
+   font-size: 20px;
+   margin-top: 60px;
+   padding-left: 12px;
+  }
+  
+  .sign_app {
+   padding-right: 20px;
+  }
+  
+  .text-line7 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 84%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line8 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 81%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  .text-line9 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 58%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }
+  
+  h3.side_head1 {
+   background-color: #00a65a;
+   color: white;
+   width: 25%;
+   padding: 6px 6px;
+   border-radius: 0;
+   font-size: 20px;
+   margin-top: 60px;
+   padding-left: 12px;
+  }
+  
+  .top_app_form5 {
+   padding-bottom: 20px;
+  }
+  
+  .checkbox {
+   padding-left: 40px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+   opacity: 0;
+   z-index: 1;
+  }
+  
+  .checkbox label {
+   display: inline-block;
+   position: relative;
+   padding-left: 5px;
+  }
+  
+  .checkbox label::before {
+   content: "";
+   display: inline-block;
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   left: 0;
+   margin-left: -20px;
+   border: 1px solid #00a65a;
+   border-radius: 0px;
+   background-color: #fff;
+   -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+   -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+   transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+  .checkbox input[type="checkbox"]:checked + label::after {
+   font-family: 'FontAwesome';
+   content: "\f00c";
+  }
+  
+  .checkbox label::after {
+   display: inline-block;
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left: 2px;
+   top: 2px;
+   margin-left: -20px;
+   padding-left: 3px;
+   padding-top: 1px;
+   font-size: 11px;
+   color: #555555;
+  }
+  
+  .text-line10 {
+   background-color: transparent;
+   color: #000;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: solid #00a65a 1px;
+   padding: 3px 10px;
+   width: 38%;
+   display: inline-block;
+   margin-left: 25px;
+   position: relative;
+  }

@@ -1,0 +1,15 @@
+[23-Oct-2015 14:35:33 Asia/calcutta] PHP Parse error:  syntax error, unexpected ''='' (T_CONSTANT_ENCAPSED_STRING) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 497
+[23-Oct-2015 15:12:12 Asia/calcutta] PHP Fatal error:  Class 'App\Http\Controllers\File' not found in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 542
+[30-Oct-2015 11:04:27 Asia/calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 433
+[30-Oct-2015 11:21:03 Asia/calcutta] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/routes.php on line 54
+[30-Oct-2015 11:35:21 Asia/calcutta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 663
+[30-Oct-2015 11:52:41 Asia/calcutta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 664
+[30-Oct-2015 11:56:50 Asia/calcutta] PHP Parse error:  syntax error, unexpected '$count' (T_VARIABLE) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 675
+[30-Oct-2015 12:24:40 Asia/calcutta] PHP Parse error:  syntax error, unexpected ')' in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 701
+[30-Oct-2015 12:25:02 Asia/calcutta] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 700
+[30-Oct-2015 12:26:04 Asia/calcutta] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 700
+[30-Oct-2015 12:26:08 Asia/calcutta] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 700
+[30-Oct-2015 12:26:09 Asia/calcutta] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 700
+[30-Oct-2015 12:28:37 Asia/calcutta] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 702
+[30-Oct-2015 12:30:22 Asia/calcutta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 697
+[03-Nov-2015 15:10:17 Asia/calcutta] PHP Fatal error:  Class 'App\Http\Controllers\Floor' not found in /home/aimwindow/public_html/aimwindow.in/parking/app/Http/Controllers/ApiController.php on line 270

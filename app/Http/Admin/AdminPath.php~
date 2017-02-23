@@ -1,0 +1,41 @@
+<?php 
+Route::get('/', function () {
+	if(Auth::check()){
+		return Redirect::to('dashboard')
+			->with('title','Admin Dashboard');
+	}else{
+		return view('admin.login');
+	}
+});
+
+Route::post('attempt-login','UserController@Login');
+Route::get('add-floor', ['middleware' => 'auth', function()
+{  return view('admin.add_floor')
+	->with('title','Add New Floor');
+}]);
+Route::get('dashboard', ['middleware' => 'auth', function()
+{	
+	if(Auth::user()->id=='1'){
+		$title = "Admin Dashboard";
+    }else{
+		$title = "Staff Dashboard";
+	}
+	return view('admin.adminDashboard')
+		->with('title' ,$title);
+}]);
+
+Route::group(['middleware'=>'auth'], function()
+{
+	Route::resource('floor', 'FloorController');
+	Route::resource('staff', 'UserController');
+	Route::resource('staff-details', 'UserController@staffList');
+	Route::resource('set-status', 'UserController@ChangeStatus');
+	Route::resource('floor-details', 'FloorController@FloorView');
+	Route::get('edit-floor', 'FloorController@show');
+	Route::get('ajax-floor', 'FloorController@AjaxFloor');
+	Route::get('choose-duration', 'AmountController@AjaxDuration');
+	Route::resource('amount', 'AmountController');
+	Route::resource('amount-details', 'AmountController@AmountView');
+});
+
+?>

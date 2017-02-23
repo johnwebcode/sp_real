@@ -1,0 +1,218 @@
+@extends('layout.layout')
+@section('content')
+<?php 
+use Carbon\Carbon;
+?>
+
+    <div class="content-wrapper"><!-- Content Wrapper. Contains page content -->
+        <section class="content-header"><!-- Content Header (Page header) -->
+            <h1>All Reports</h1>
+            <ol class="breadcrumb">
+                <li><a href="{{URL::to('/')}}"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>
+        </section>
+        <!--  Line -->
+        <div class="content-underline"></div>
+
+        <section class="content" > <!-- Main content Start -->
+            {{-- Success Alert--}}
+            @if (Session::has('success'))
+                <div class="flash_alert">
+                    <h3 class="alert alert-success">{!! Session::get('success') !!}</h3>
+                </div>
+            @endif
+            {{-- Success Alert--}}
+            @if (Session::has('error'))
+                <div class="flash_alert">
+                    <h3 class="alert alert-error">{!! Session::get('error') !!}</h3>
+                </div>
+            @endif
+
+            <div class="col-md-12">
+                <form class="form-horizontal" method="post" action="report-all">
+                    <input type="hidden" name="_token" class="_token" value="{{csrf_token()}}">
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Select Project :  </label>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="floor" id="floor">
+                                <option value="0">All Project</option>
+                                <?php foreach($floor as $floors) {?>
+                                <?php echo "<option value='$floors->id'>$floors->name</option>"; ?>
+                                <?php } ?>
+                            </select>
+                            <span class="text-red">{{ $errors->first('Project')}}</span>
+                        </div>
+
+                        <label class="col-sm-2 control-label">Date From : </label>
+                        <div class="col-sm-2">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input maxlength="10" class="form-control" placeholder="DD/MM/YYYY" name="date_from" id="date_from">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+                            </div>
+                            <span class="text-red">{{ $errors->first('date_from')}}</span>
+                        </div>
+
+
+                        <label class="col-sm-1 control-label">Date To : </label>
+                        <div class="col-sm-2">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input maxlength="10"  class="form-control" placeholder="DD/MM/YYYY" name="date_to" id="date_to">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+                            </div>
+                            <span class="text-red">{{ $errors->first('date_to')}}</span>
+                        </div>
+
+                        <div class="col-sm-1">
+                            <input type="submit" class="btn btn-success" value="Get Report">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <?php if(@$parking) {  ?>
+            
+@foreach($amount as $amtVal)       
+@endforeach
+<?php
+$narmalAmt=$amtVal['Commission Amount'];
+$bankerAmt=$amtVal['Totel Voucher'];
+$dayAmt=$amtVal['Totel Commission'];
+$monthlyAmt=$amtVal['TDS'];
+?>
+            <div class="row">
+                <h2 class="text-center text-green">Project Report</h2>
+
+                <div class="col-md-12" style="background-color: #ffffff;">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>flot.No</th>
+                            <th>project Name</th>
+                            <th>flot Name</th>
+                            <th>agent Name</th>
+                            <th>Type</th>
+                            <th>agent No</th>
+                            <th>Mob.No</th>
+                            <th>address</th>
+                            <th>Commission</th>
+                            <th>Total voucher</th>
+                            <th>TDS)</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php $i=1; foreach($parking as $park){  ?>
+                            <tr>
+                                <td>{{$i}}</td> <?php $i++; ?>
+                                <td>{{$park->name}}</td>
+                                <td>{{$park->short_name.'-'.$park->id}}</td>
+                                <td>{{$park->p_name}}</td>
+                                <td>
+                                    <?php if($park->parking_type==1) { $type="<kbd class='bg-green'>Normal</kbd>"; }
+                                    elseif($park->parking_type==2) { $type="<kbd class='bg-yellow-active'>Banker</kbd>"; }
+                                    elseif($park->parking_type==3) { $type="<kbd class='bg-primary'>Day</kbd>"; }
+                                    else { $type="<kbd class='bg-red'>Monthly</kbd>"; } ?>
+                                   {!!$type!!}
+                                </td>
+                                <td>{{$park->car_number}}</td>
+                                <td>{{$park->mobile}}</td>
+                                <td>{{$park->in_time}}</td>
+                                <td>
+                                    <?php
+                                        if($park->out_time=='0000-00-00 00:00:00')
+                                        {
+                                            $out_time="Null";
+                                        }
+                                        else{
+                                            $out_time=$park->out_time;
+                                        }
+                                    ?>
+
+                                    {{$out_time}}
+                                </td>
+                                <td>
+                                    <?php
+                                    if($park->status==1)
+                                    {
+                                        $dur=Carbon::createFromTimeStamp(strtotime($park->in_time))->diffForHumans();
+                                    }
+                                    else
+                                    {  //$dur= Carbon::createFromTimeStamp(strtotime($park->out_time),strtotime($park->in_time))->toDateTimeString();
+                                      //  $interval = date_diff($park->out_time,$park->in_time);
+                                     //   $dur= $interval->format('%h:%i:%s');
+                                    //$dur= strtotime($park->out_time)-strtotime($park->in_time);
+                                    }
+                                    ?>
+                                {{$dur}}
+                                </td>
+
+                                <td>
+                                    <?php
+                                        if($park->cost==null)
+                                            {
+                                    if($park->parking_type==1){
+                                    $normalCheck=Carbon::createFromTimeStamp(strtotime($park->in_time))->diffInMinutes()/60;
+                                    $normalDur= ceil($normalCheck);
+                                        if($normalDur<1) { $normalDur=1; }
+                                        $TotalCast=$normalDur*$narmalAmt;
+                                    }
+
+                                    elseif($park->parking_type==2) {
+                                        $bankerCheck=Carbon::createFromTimeStamp(strtotime($park->in_time))->diffInMinutes()/60;
+                                        if(($bankerCheck*60)<60) { $bankerDur=0; }
+                                        else { $bankerDur= ceil($bankerCheck)-1; }
+                                        $TotalCast=$bankerDur*$bankerAmt; }
+
+                                    elseif($park->parking_type==3) {
+                                        $dayDur=Carbon::createFromTimeStamp(strtotime($park->in_time))->diffInDays();
+                                        if($dayDur==0){ $bankerDur=1;}
+                                        $TotalCast=$dayDur*$dayAmt; }
+
+                                    else 
+                                    {
+                                    $monthlyDur=Carbon::createFromTimeStamp(strtotime($park->in_time))->diffInMinutes()/60;
+                                    $monthlyDur=$monthlyDur/24;
+                                    $monthlyDur=$monthlyDur/30;
+                                    
+                                    $monthlyDur=ceil($monthlyDur);
+                                    $TotalCast=$monthlyDur*$monthlyAmt; 
+                                    }
+                                          	}
+                                            else
+                                            {
+                                               $TotalCast=$park->cost;
+                                            }
+                                    ?>
+                                {!! $TotalCast !!} (RM)
+                                </td>
+
+                                <td><?php if($park->status==1){ ?> <kbd class="bg-green">Parked</kbd> <?php } else { ?> <kbd class="bg-red">closed</kbd><?php } ?></td>
+                            </tr>
+                      <?php } ?>
+
+                        </tbody>
+                    </table>
+                    {{--<div class="text-center">{!! str_replace('/?', '?', $parking->render()) !!}</div>--}}
+
+                </div>
+            </div>
+            <?php } ?>
+
+        </section><!-- Main content Emd -->
+        
+        
+        
+<!--<div class="border row" >
+  <div style="border-right: 1px solid #5F6F7E;" class="border col-lg-3">.col-lg-3</div>
+  <div style="border-right: 1px solid #5F6F7E;" class="border col-lg-3">.col-lg-3</div>
+  <div style="border-right: 1px solid #5F6F7E;" class="border col-lg-3">.col-lg-3</div>
+  <div class="border col-lg-3">.col-lg-3</div>
+</div> -->
+        
+        
+        
+    </div><!-- /.content-wrapper -->
+@stop

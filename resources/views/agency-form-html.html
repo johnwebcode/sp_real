@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Agency-form</title>
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.css">
+ <script src="jss/jquery-3.1.0.js"></script>
+ <script src="jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <script src="js/jquery-3.1.0.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function () {
+   $('.Box').on("keyup", function (e) {
+    var $input = $(this);
+    if ($input.val().length == 0 && e.which == 8) {
+     $input.toggleClass("productkey2 productkey1").prev('.Box').focus();
+    }
+    else if ($input.val().length >= parseInt($input.attr("maxlength"), 10)) {
+     $input.toggleClass("productkey1 productkey2").next('.Box').focus();
+    }
+   });
+  });
+ </script>
+ <style>
+  * {
+   padding: 0;
+   margin: 0;
+  }
+  
+  fieldset {
+   margin: 20px;
+   border: 2px solid #00a65a;
+  }
+  
+  .text_content {
+   border-bottom: 2px solid green;
+  }
+  
+  .agency_form {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .logo {
+   float: left;
+   width: 15%;
+   padding: 20px;
+  }
+  
+  .reg_no {
+   float: left;
+   width: 17%;
+   color: #00a65a;
+   font-size: 18px;
+   padding: 20px;
+  }
+  
+  .top_heading {
+   width: 60%;
+   float: left;
+  }
+  
+  .top_heading h6 {
+   font-size: 27px;
+   color: #00a65a;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   text-align: center;
+  }
+  
+  .home_address p {
+   font-size: 18px;
+   color: #00a65a;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  }
+  
+  .app_form h5 {
+   background-color: #00a65a;
+   color: white;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 6px 8px;
+   border-radius: 5px;
+   margin-top: 20px;
+   text-align: center;
+   font-size: 20px;
+  }
+  
+  .content_name {
+   float: left;
+   width: 50%;
+   padding: 7px 10px;
+   color: #00a65a;
+  }
+  
+  .header-content {
+   margin: 20px;
+  }
+  
+  .header-content li {
+   text-decoration: none;
+   list-style-type: none;
+   display: inline-block;
+   width: 32%;
+   border-right: 2px solid #00a65a;
+  }
+  
+  .header-content li:last-child {
+   border-right: none;
+  }
+  
+  .header-content ul {
+   border: 2px solid #00a65a;
+   border-radius: 10px;
+  }
+  
+  .app_name {
+   padding-left: 20px;
+   padding-right: 10px;
+   color: #00a65a;
+   font-size: 20px;
+  }
+  
+  .content_form p {
+   padding-left: 20px;
+   padding-top: 12px;
+   color: #00a65a;
+   font-size: 18px;
+  }
+  
+  .agency_app {
+   float: left;
+   width: 73%;
+  }
+  
+  .content_form {
+   padding-top: 15px;
+  }
+  
+  .content_form:first-child {
+   padding-top: 0;
+  }
+  
+  .add_content,
+  .add_content1 {
+   padding-left: 20px;
+  }
+  
+  .add_content1 {
+   float: left;
+   width: 36%;
+   padding-top: 12px;
+   padding-bottom: 20px;
+  }
+  
+  address {
+   display: block;
+   padding-left: 10px;
+   font-style: normal;
+   padding-top: 15px;
+  }
+  
+  .address {
+   width: 40%;
+  }
+  
+  .text_line {
+   border-bottom: 2px solid #00a65a;
+   margin-left: 20px;
+  }
+  
+  .app_name1 {
+   padding-left: 20px;
+   padding-right: 10px;
+   color: #00a65a;
+   font-size: 20px;
+   padding-bottom: 20px;
+  }
+  
+  .Box:focus {
+   border: thin solid #FFD633;
+   -webkit-box-shadow: 0px 0px 3px #F7BB2E;
+   -moz-box-shadow: 0px 0px 3px #F7BB2E;
+   box-shadow: 0px 0px 3px #F7BB2E;
+  }
+  
+  .Box {
+   height: 30px;
+   width: 43px;
+   text-align: justify;
+   letter-spacing: 5px;
+   padding: 10px;
+  }
+  
+  .row-fluid {
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+   top: 0;
+   left: 72px;
+  }
+  
+  .row-fluid input[type="text"] {
+   border-color: #00a65a;
+   padding: 0px 0px;
+  }
+  
+  .pin-number {
+   float: right;
+   width: 60%;
+   position: relative;
+  }
+  
+  .photo-upload {
+   border: 2px solid #00a65a;
+   width: 18%;
+   height: 220px;
+   margin-right: 80px;
+   float: right;
+  }
+  
+  .phone_no {
+   float: left;
+   width: 50%;
+   padding-top: 60px;
+  }
+  
+  .mobile {
+   float: right;
+   width: 50%;
+   padding-top: 25px;
+  }
+  
+  .dob {
+   float: left;
+   width: 30%;
+  }
+  
+  .age {
+   float: left;
+   width: 25%;
+  }
+  
+  .sex {
+   float: left;
+   width: 40%;
+  }
+  
+  .dob,
+  .age,
+  .sex {
+   padding-top: 20px;
+  }
+  
+  .clear {
+   clear: both;
+  }
+  
+  .pan_no,
+  .nominee_name,
+  .applicant_name,
+  .applicant_sign,
+  .rank,
+  .code,
+  .personal_det3 li,
+  .bottom_content,
+  .introducer_code,
+  .date {
+   padding-top: 20px;
+  }
+  
+  .applicant_name,
+  .introducer_name,
+  .name_app {
+   float: left;
+   width: 50%;
+  }
+  
+  .applicant_sign,
+  .introducer_sign,
+  .sign_app {
+   float: right;
+   width: 50%;
+  }
+  
+  .rank {
+   float: left;
+   width: 40%;
+   padding-bottom: 20px;
+  }
+  
+  .code {
+   float: right;
+   width: 60%;
+  }
+  
+  .personal_det3 {
+   border-top: 2px solid #00a65a;
+   border-bottom: 2px solid #00a65a;
+  }
+  
+  .personal_det3 li {
+   text-decoration: none;
+   list-style-type: none;
+   padding-top: 20px;
+  }
+  
+  .personal_det3 li:last-child {
+   padding-bottom: 20px;
+  }
+  
+  .introducer_code {
+   float: left;
+   width: 30%;
+  }
+  
+  .date {
+   float: left;
+   width: 25%;
+  }
+  
+  .name_app {
+   padding-bottom: 20px;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="agency_form">
+  <fieldset>
+   <div class="top_app_form">
+    <div class="logo"> <img src="images/sri%20pathi%20logo.jpg"> </div>
+    <div class="top_heading">
+     <h6>SHRI PATHI REALTORS</h6>
+     <div class="home_address">
+      <p>203 J.S.P Complex, Near Guruvayurappan Temple,
+       <br> Uthukuli Main Road, Thirupur 641601.
+       <br> Cell: 98645 64943, 98465 56485</p>
+     </div>
+     <div class="app_form">
+      <h5>AGENCY APPLICATION FORM</h5> </div>
+    </div>
+    <div class="reg_no">
+     <p>Govt.Regd.No:673/2016</p>
+    </div>
+   </div>
+   <div class="clear"></div>
+   <div class="header-content">
+    <ul>
+     <li>
+      <div class="top_content">
+       <label class="content_name">Agency Code:</label>
+       <label class="content_name">{{ $user->agencycode}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="top_content">
+       <label class="content_name">Rank: </label>
+       <label class="content_name">{{ $user->rank}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="top_content">
+       <label class="content_name">Date: </label>
+       <label class="content_name">{{ $user->date}}</label>
+      </div>
+     </li>
+    </ul>
+   </div>
+   <div class="clear"></div>
+   <div class="agency_app">
+    <div class="content_form">
+     <label class="app_name">Name of Applicant: </label>
+     <label class="text_content">{{ $user->nameapplicant}}</label>
+     <p>(in Full & Block Letter) </p>
+    </div>
+    <div class="content_form">
+     <label class="app_name">Father's/Husband's Name: </label>
+     <label class="text_content">{{ $user->fhname}}</label>
+    </div>
+    <div class="content_form">
+     <div class="address">
+      <label class="app_name1">Permanent Address: </label> <address>
+    <label class="text_line">{{ $user->address}}</label>
+     </address> </div>
+     <div class="pin-number">
+      <label class="app_name">Pin: </label>
+      <div class="row-fluid">
+       <input class="Box productkey1" type="text" name="number1" maxlength="1">
+       <input class="Box productkey1" type="text" name="number2" maxlength="1">
+       <input class="Box productkey1" type="text" name="number3" maxlength="1">
+       <input class="Box productkey1" type="text" name="number4" maxlength="1">
+       <input class="Box productkey1" type="text" name="number5" maxlength="1">
+       <input class="Box productkey1" type="text" name="number6" maxlength="1"> </div>
+     </div>
+    </div>
+   </div>
+   <div class="photo-upload"></div>
+   <div class="personal_det">
+    <div class="phone_no">
+     <label class="app_name">Phone No: </label>
+     <label class="text_content">{{ $user->phone}}</label>
+    </div>
+    <div class="mobile">
+     <label class="app_name">Mobile: </label>
+     <label class="text_content">{{ $user->mobile}}</label>
+    </div>
+   </div>
+   <div class="personal_det">
+    <div class="dob">
+     <label class="app_name">Date of Birth: </label>
+     <label class="text_content">{{ $user->dob}}</label>
+    </div>
+    <div class="age">
+     <label class="app_name">Age: </label>
+     <label class="text_content">{{ $user->age}}</label>
+    </div>
+    <div class="sex">
+     <label class="app_name">Sex: Male/Female nationality </label>
+     <label class="text_content">{{ $user->sex}}</label>
+    </div>
+   </div>
+   <div class="clear"></div>
+   <div class="pan_no">
+    <label class="app_name">PAN No: </label>
+    <label class="text_content">{{ $user->pan}}</label>
+   </div>
+   <div class="nominee_name">
+    <label class="app_name">Nominee's Name : </label>
+    <label class="text_content">{{ $user->nname}}</label>
+   </div>
+   <div class="personal_det1">
+    <div class="dob">
+     <label class="app_name">Date of Birth: </label>
+     <label class="text_content">{{ $user->ndob}}</label>
+    </div>
+    <div class="age">
+     <label class="app_name">Age: </label>
+     <label class="text_content">{{ $user->nage}}</label>
+    </div>
+    <div class="sex">
+     <label class="app_name">Sex: M/F Relationship </label>
+     <label class="text_content">{{ $user->nsex}}</label>
+    </div>
+    <div class="applicant_name">
+     <label class="app_name">Name of Applicant: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="applicant_sign">
+     <label class="app_name">Signature of Applicant: </label>
+     <label class="text_content"></label>
+    </div>
+   </div>
+   <div class="clear"></div>
+   <div class="rank_set">
+    <div class="rank">
+     <label class="app_name">Rank: </label>
+     <label class="text_content">{{ $user->nrank}}</label>
+    </div>
+    <div class="code">
+     <label class="app_name">Code: </label>
+     <label class="text_content">{{ $user->ncode}}</label>
+    </div>
+   </div>
+   <div class="clear"></div>
+   <div class="personal_det3">
+    <ul>
+     <li>
+      <div class="list1">
+       <label class="app_name">6. SR UNIT Manager </label>
+       <label class="text_content">{{ $user->sum}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list2">
+       <label class="app_name">5. UNIT Manager </label>
+       <label class="text_content">{{ $user->um}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list3">
+       <label class="app_name">4. Senior Coordinator </label>
+       <label class="text_content">{{ $user->sm}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list4">
+       <label class="app_name">3. Coordinator </label>
+       <label class="text_content">{{ $user->co}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list5">
+       <label class="app_name">2. Senior Advisor </label>
+       <label class="text_content">{{ $user->sa}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list6">
+       <label class="app_name">1. Advisor </label>
+       <label class="text_content">{{ $user->ad}}</label>
+      </div>
+     </li>
+     <li>
+      <div class="list7">
+       <label class="app_name">Full Chain of Unit No </label>
+       <label class="text_content">{{ $user->fcun}}</label>
+      </div>
+     </li>
+    </ul>
+   </div>
+   <div class="clear"></div>
+   <div class="bottom_content">
+    <div class="introducer_name">
+     <label class="app_name">Name of Introducer: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="introducer_sign">
+     <label class="app_name">Signature of Introducer: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="introducer_code">
+     <label class="app_name">Introducer Code: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="rank">
+     <label class="app_name">Rank: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="date">
+     <label class="app_name">Date: </label>
+     <label class="text_content"></label>
+    </div>
+    <div class="name_app">
+     <label class="app_name">Name of Applicant</label>
+    </div>
+    <div class="sign_app">
+     <label class="app_name">Signature of Applicant </label>
+    </div>
+   </div>
+  </fieldset>
+ </div>
+</body>
